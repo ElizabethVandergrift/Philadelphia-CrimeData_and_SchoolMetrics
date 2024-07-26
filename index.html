@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-3</title>
+    <!-- Include custom stylesheet -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <!-- Include Leaflet stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <!-- Dropdown for filtering map layers -->
+    <div id="filter-container" style="width: 80%; margin: 20px auto;">
+        <select id="filter" class="dropdown">
+            <option value="">Select Category</option>
+            <!-- Options will be populated by JavaScript -->
+        </select>
+    </div>
+
+        <!-- Map container -->
+    <div id="map" style="height: 850px;"></div>
+
+    <!-- Include Papa Parse library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <!-- Include D3.js library -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- Include Leaflet library -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- Include custom JavaScript -->
+    <script src="static/js/logic.js"></script>
+</body>
+</html>
