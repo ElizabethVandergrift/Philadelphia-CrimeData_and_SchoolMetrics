@@ -1,0 +1,76 @@
+/* Existing styles */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Style the container for the dropdown menu */
+#filter-container {
+  margin: 10px;
+  text-align: center;
+}
+
+.legend {
+        line-height: 18px;
+        color: #555;
+        background: white;
+        padding: 6px 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
+.legend h4 {
+        margin: 0 0 5px;
+        color: #777;
+    }
+.legend i {
+        width: 18px;
+        height: 18px;
+        float: left;
+        margin-right: 8px;
+        opacity: 0.7;
+    }
+
+
+
+/* Style the dropdown */
+.dropdown {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+/* Add a hover effect */
+.dropdown:hover {
+  border-color: #007bff;
+  background-color: #e9ecef;
+}
+
+/* Style the selected option */
+.dropdown option {
+  padding: 10px;
+}
+
+
+#map,
+body,
+html {
+  height: 100%;
+}
+
+/* New styles for Leaflet map */
+.leaflet-layer,
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out,
+.leaflet-control-attribution {
+  filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+}
+
+.leaflet-container {
+  background: #000;
+}
