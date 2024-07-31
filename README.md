@@ -6,18 +6,19 @@ This project explores potential correlations between crime incidents in Philadel
 https://elizabethvandergrift.github.io/Project-3/
 
 ## Table of Contents
-- **[Outputs_Police](./Outputs_Police)**: Contains outputs related to police data analysis.
-- **[Outputs_School_Metrics](./Outputs_School_Metrics)**: Contains outputs from school metrics analysis.
 - **[data](./data)**: Data files used in the project, including cleaned and raw datasets.
-- **[static](./static)**: General static files for the web interface.
-- **[Diagram-Schools_Metrics_Police_Incidents.png](./Diagram-Schools_Metrics_Police_Incidents.png)**: Diagram illustrating the data flow and relationships.
-- **[Police_and_Incidents_Clean_up and Correlation Analysis.ipynb](./Police_and_Incidents_Clean_up%20and%20Correlation%20Analysis.ipynb)**: Jupyter notebook for cleaning and analyzing police and incident data.
-- **[Presentation_Philly_Crime_School.pptx](./Presentation_Philly_Crime_School.pptx)**: Main project presentation.
-- **[SQL Outputs](./SQL%20Outputs)**: Contains SQL query outputs and results.
-- **[Queries for phila_resources sql database.sql](./Queries%20for%20phila_resources%20sql%20database.sql)**: SQL queries used in the project.
-- **[Schema for phila_resources sql database.sql](./Schema%20for%20phila_resources%20sql%20database.sql)**: SQL schema for the project database.
 - **[Scool_Metrics_Cleanup.ipynb](./Scool_Metrics_Cleanup.ipynb)**: Jupyter notebook for cleaning school metrics data.
+- **[Outputs_School_Metrics](./Outputs_School_Metrics)**: Contains outputs from school metrics analysis.
+- **[Police_and_Incidents_Clean_up and Correlation Analysis.ipynb](./Police_and_Incidents_Clean_up%20and%20Correlation%20Analysis.ipynb)**: Jupyter notebook for cleaning and analyzing police and incident data.
+- **[Outputs_Police](./Outputs_Police)**: Contains outputs related to police data analysis.
+- **[Building SQL Database](./Building%20SQL%20Database)**: Comprehensive documentation including the ERD, SQL Queries, and Schema for the database.
+- **[Diagram-Schools_Metrics_Police_Incidents.png](./Diagram-Schools_Metrics_Police_Incidents.png)**: Diagram illustrating the data flow and relationships.
+- **[Schema for phila_resources sql database.sql](./Schema%20for%20phila_resources%20sql%20database.sql)**: SQL schema for the project database.
+- **[Queries for phila_resources sql database.sql](./Queries%20for%20phila_resources%20sql%20database.sql)**: SQL queries used in the project.
+- **[SQL Outputs](./SQL%20Outputs)**: Contains SQL query outputs and results.
+- **[static](./static)**: Includes Java Script and CSS files for the web interface, Interactive Map, and Graphs.
 - **[index.html](./index.html)**: Main entry point for the project's web interface.
+- **[Presentation_Philly_Crime_School.pptx](./Presentation_Philly_Crime_School.pptx)**: Main project presentation.
 - **[README.md](./README.md)**: Project documentation.
   
 ## Ethical Considerations
