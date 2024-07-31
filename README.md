@@ -5,6 +5,20 @@ This project explores potential correlations between crime incidents in Philadel
 
 https://elizabethvandergrift.github.io/Project-3/
 
+## Table of Contents
+- **[Outputs_Police](./Outputs_Police)**: Contains outputs related to police data analysis.
+- **[Outputs_School_Metrics](./Outputs_School_Metrics)**: Contains outputs from school metrics analysis.
+- **[data](./data)**: Data files used in the project, including cleaned and raw datasets.
+- **[static](./static)**: General static files for the web interface.
+- **[Diagram-Schools_Metrics_Police_Incidents.png](./Diagram-Schools_Metrics_Police_Incidents.png)**: Diagram illustrating the data flow and relationships.
+- **[Police_and_Incidents_Clean_up and Correlation Analysis.ipynb](./Police_and_Incidents_Clean_up%20and%20Correlation%20Analysis.ipynb)**: Jupyter notebook for cleaning and analyzing police and incident data.
+- **[Presentation_Philly_Crime_School.pptx](./Presentation_Philly_Crime_School.pptx)**: Main project presentation.
+- **[Queries for phila_resources sql database.sql](./Queries%20for%20phila_resources%20sql%20database.sql)**: SQL queries used in the project.
+- **[Schema for phila_resources sql database.sql](./Schema%20for%20phila_resources%20sql%20database.sql)**: SQL schema for the project database.
+- **[Scool_Metrics_Cleanup.ipynb](./Scool_Metrics_Cleanup.ipynb)**: Jupyter notebook for cleaning school metrics data.
+- **[index.html](./index.html)**: Main entry point for the project's web interface.
+- **[README.md](./README.md)**: Project documentation.
+  
 ## Ethical Considerations
 When analyzing data that involves crime statistics and educational performance, several ethical considerations must be taken into account:
 
@@ -22,6 +36,7 @@ This analysis uses datasets from various public sources to provide a comprehensi
 ### Crime Incidents (2024)
 Detailed records of crime incidents within Philadelphia for the year 2024.
 - [Crime Incidents Data](https://opendataphilly.org/datasets/crime-incidents/)
+- This file contains over 85,000 entries.
 
 ### School Performance Metrics (2023)
 Performance metrics for Philadelphia schools for the school year 2022-2023.
@@ -35,9 +50,22 @@ Performance metrics for Philadelphia schools for the school year 2022-2023.
 
 ## Methodology
 - **Data Cleaning and Preprocessing**: Ensuring both datasets are clean and formatted correctly.
+    - School_Metrics_Cleanup.ipynb
+    - Police_and_Incidents_Clean_up and Correlation Analysis.ipynb
 - **Data Merging**: Combining datasets on the basis of PSA.
+    - Police_and_Incidents_Clean_up and Correlation Analysis.ipynb
+    - Database Design:
+        - Diagram-Schools_Metrics_Police_Incidents.png
+        - Schema for phila_resources sql database.sql
+        - Queries for phila_resources sql database.sql
 - **Statistical Analysis**: Identifying correlations between crime rates and school performance metrics.
-- **Visualization**: Creating interactive visualizations to depict relationships.
+    - Police_and_Incidents_Clean_up and Correlation Analysis.ipynb
+- **Visualization**: Creating interactive visualizations to depict relationships.  
+    - Interactive Map of Crime and School Locations and PSA and ZIP Code Boundaries
+    - Visualization located here: https://elizabethvandergrift.github.io/Project-3/
+    - static
+        - style.css
+        - logic.js
 
 ## Technologies Used
 - **Python**, **Plotly**, **D3.js**, **Pandas**, and **SQL Database**.
