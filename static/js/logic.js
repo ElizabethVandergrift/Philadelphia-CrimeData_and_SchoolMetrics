@@ -64,7 +64,7 @@ function createMarkers(response) {
 }
 
 // Fetch the local GeoJSON data
-fetch('Police_Stations.geojson')
+fetch('data/Police_Stations.geojson')
     .then(response => response.json()) //transforms the response to a JSON 
     .then(createMarkers) //Applies our function to the result
     .catch(error => console.error('Error loading the GeoJSON data:', error)); 
@@ -113,7 +113,7 @@ fetch(cartoURL)
     .catch(error => console.error('Error fetching data from Carto:', error));
 
 // Fetch the local GeoJSON data for ZIP code polygons
-fetch('Zipcodes_Poly.geojson')
+fetch('data/Zipcodes_Poly.geojson')
     .then(response => response.json())
     .then(data => { //all the info form the file is saved in the data variable
         L.geoJSON(data, { //We create all the polygons with the following properties
@@ -156,13 +156,13 @@ function addCSVMarkers(data) {
 }
 
 // Fetch the CSV file and add markers to the map
-fetch('new_geo_schools_df.csv')
+fetch('data/new_geo_schools_df.csv')
     .then(response => response.text())
     .then(addCSVMarkers)
     .catch(error => console.error('Error loading the CSV data:', error));
 
 // Fetch the local GeoJSON data for ZIP code polygons
-fetch('Boundaries_PSA.geojson')
+fetch('data/Boundaries_PSA.geojson')
     .then(response => response.json())
     .then(data => { //all the info form the file is saved in the data variable
         L.geoJSON(data, { //We create all the polygons with the following properties
