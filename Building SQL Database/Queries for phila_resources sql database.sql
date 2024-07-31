@@ -30,28 +30,53 @@ FROM "IncidentsTimePlace"
 GROUP BY "General_Crime_Category"
 ORDER BY COUNT("General_Crime_Category") DESC;
 
---3. List the frequency of each type of crime within each District_PSA, group by both District_PSA and General_Crime_Category. 
+--3. List the frequency counts, in descending order, of General_Crime_Category and Date (that is, how many of each crime).
+SELECT 
+    "Dispatch_Date",
+    "General_Crime_Category", 
+    COUNT("General_Crime_Category") AS "Frequency"
+FROM 
+    "IncidentsTimePlace"
+GROUP BY 
+    "Dispatch_Date", "General_Crime_Category"
+ORDER BY 
+    "Dispatch_Date", COUNT("General_Crime_Category") DESC;
+
+--4.  List the frequency counts, in descending order, of Crime_Group and Date (that is, how many of each crime group).
+SELECT 
+    "Dispatch_Date",
+    "Crime_Group", 
+    COUNT("Crime_Group") AS "Frequency"
+FROM 
+    "IncidentsTimePlace"
+GROUP BY 
+    "Dispatch_Date", "Crime_Group"
+ORDER BY 
+    "Dispatch_Date", COUNT("Crime_Group") DESC;
+
+
+--5. List the frequency of each type of crime within each District_PSA, group by both District_PSA and General_Crime_Category. 
 
 SELECT "District_PSA", "General_Crime_Category", COUNT(*) AS "Frequency"
 FROM "IncidentsTimePlace"
 GROUP BY "District_PSA", "General_Crime_Category"
 ORDER BY "District_PSA", COUNT(*) DESC;
 
---4. List the totals each type of crime within each District_PSA,
+--6. List the totals each type of crime within each District_PSA,
 
 SELECT "District_PSA", COUNT(*) AS "Total_Crimes"
 FROM "IncidentsTimePlace"
 GROUP BY "District_PSA"
 ORDER BY COUNT(*) DESC;
 
---4. List the totals each type of crime within each District_PSA,
+--7. List the totals each type of crime within each District_PSA,
 
 SELECT "District_PSA", COUNT(*) AS "Total_Crimes"
 FROM "IncidentsTimePlace"
 GROUP BY "District_PSA"
 ORDER BY COUNT(*) DESC;
 
----5. List the District_PSA, Crime Group and Frequncy.
+---8. List the District_PSA, Crime Group and Frequncy.
 SELECT "District_PSA", "Crime_Group", COUNT(*) AS "Frequency"
 FROM "IncidentsTimePlace"
 GROUP BY "District_PSA", "Crime_Group"
@@ -59,7 +84,7 @@ ORDER BY "District_PSA", COUNT(*) DESC;
 
 -----------High School Metrics Analysis------------ 
 
----6. List Highschool Metrics with PSA and Crime Data
+---9. List Highschool Metrics with PSA and Crime Data
 SELECT 
     ng."school_id",
     ng."SCHOOL_NAME",
@@ -75,7 +100,7 @@ ON
 ORDER BY 
     ng."District_PSA";
 
---7. Calculate the Average School Metrics for High Schools within the same PSA
+--10. Calculate the Average School Metrics for High Schools within the same PSA
 SELECT 
     ng."District_PSA",
     AVG(hs."Percent_Students_Attending_at_Least_90_Percent") AS "Average_Percent_Attending_90",
@@ -91,7 +116,7 @@ GROUP BY
 ORDER BY 
     ng."District_PSA";
 
---8. Now include the total crimes for each crime group per PSA
+--11. Now include the total crimes for each crime group per PSA
 SELECT 
     itp."District_PSA",
     itp."Crime_Group",
@@ -103,7 +128,7 @@ GROUP BY
 ORDER BY 
     itp."District_PSA", COUNT(*) DESC;
 
---9. Combined query from #7 and #8 queries
+--12. Combined query from #7 and #8 queries
 
 SELECT 
     a."District_PSA",
@@ -139,7 +164,7 @@ JOIN
 ORDER BY 
     a."District_PSA", b."Total_Crimes" DESC;
 
---10. Total Crimes and Average of High School Metrics
+--13. Total Crimes and Average of High School Metrics
 
 SELECT 
     a."District_PSA",
@@ -174,6 +199,7 @@ ORDER BY
     a."District_PSA", b."Total_Crimes" DESC;
 
 ---------k-8 School metrics compared to crime in same PSA---------------
+--14. Total Crimes and Average of k-8 School metrics 
 
 SELECT 
     ng."District_PSA",
@@ -202,6 +228,9 @@ ORDER BY
     ng."District_PSA";
 
 -----elementary metrics and crime data for same PSA--------------
+
+---15. Total Crimes and Average of elementary School metrics 
+
 SELECT 
     ng."District_PSA",
     AVG(es."PSSA_ELA_Percent_Students_Proficient_or_Advanced_Grades_3_to_8") AS "Average_ELA_Proficiency_3_to_8",
