@@ -13,6 +13,7 @@ https://elizabethvandergrift.github.io/Project-3/
 - **[Diagram-Schools_Metrics_Police_Incidents.png](./Diagram-Schools_Metrics_Police_Incidents.png)**: Diagram illustrating the data flow and relationships.
 - **[Police_and_Incidents_Clean_up and Correlation Analysis.ipynb](./Police_and_Incidents_Clean_up%20and%20Correlation%20Analysis.ipynb)**: Jupyter notebook for cleaning and analyzing police and incident data.
 - **[Presentation_Philly_Crime_School.pptx](./Presentation_Philly_Crime_School.pptx)**: Main project presentation.
+- **[SQL Outputs](./SQL%20Outputs)**: Contains SQL query outputs and results.
 - **[Queries for phila_resources sql database.sql](./Queries%20for%20phila_resources%20sql%20database.sql)**: SQL queries used in the project.
 - **[Schema for phila_resources sql database.sql](./Schema%20for%20phila_resources%20sql%20database.sql)**: SQL schema for the project database.
 - **[Scool_Metrics_Cleanup.ipynb](./Scool_Metrics_Cleanup.ipynb)**: Jupyter notebook for cleaning school metrics data.
