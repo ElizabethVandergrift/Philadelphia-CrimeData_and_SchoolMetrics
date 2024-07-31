@@ -3,6 +3,8 @@
 ## Project Overview
 This project explores potential correlations between crime incidents in Philadelphia during the year 2024 and school performance metrics from the previous year, 2023. It aims to understand how crime rates might influence educational outcomes across different Police Service Areas (PSAs) in the city.
 
+https://elizabethvandergrift.github.io/Project-3/
+
 ## Ethical Considerations
 When analyzing data that involves crime statistics and educational performance, several ethical considerations must be taken into account:
 
