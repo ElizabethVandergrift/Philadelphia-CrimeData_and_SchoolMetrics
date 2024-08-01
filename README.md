@@ -16,6 +16,7 @@ https://elizabethvandergrift.github.io/Project-3/
 - **[static](./static)**: Includes Java Script and CSS files for the web interface, Interactive Map, and Graphs.
 - **[index.html](./index.html)**: Main entry point for the project's web interface.
 - **[Presentation_Philly_Crime_School.pptx](./Presentation_Philly_Crime_School.pptx)**: Main project presentation.
+- **[Schools_Crime_Presentation.pdf](./Schools_Crime_Presentation.pdf)**: PDF of project presentation.
 - **[README.md](./README.md)**: Project documentation.
   
 ## Ethical Considerations
