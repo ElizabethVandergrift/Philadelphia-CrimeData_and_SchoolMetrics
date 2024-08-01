@@ -7,7 +7,7 @@ https://elizabethvandergrift.github.io/Project-3/
 
 ## Table of Contents
 - **[data](./data)**: Data files used in the project, including cleaned and raw datasets.
-- **[Scool_Metrics_Cleanup.ipynb](./Scool_Metrics_Cleanup.ipynb)**: Jupyter notebook for cleaning school metrics data.
+- **[School_Metrics_Cleanup.ipynb](./Scool_Metrics_Cleanup.ipynb)**: Jupyter notebook for cleaning school metrics data.
 - **[Outputs_School_Metrics](./Outputs_School_Metrics)**: Contains outputs from school metrics analysis.
 - **[Police_and_Incidents_Clean_up and Correlation Analysis.ipynb](./Police_and_Incidents_Clean_up%20and%20Correlation%20Analysis.ipynb)**: Jupyter notebook for cleaning and analyzing police and incident data.
 - **[Outputs_Police](./Outputs_Police)**: Contains outputs related to police data analysis.
