@@ -70,6 +70,14 @@ Performance metrics for Philadelphia schools for the school year 2022-2023.
         - style.css
         - logic.js
 
+![Screenshot 2024-08-14 155212](https://github.com/user-attachments/assets/91487678-c085-4629-845f-fd5fa4a144e3)
+
+![Screenshot 2024-08-14 155256](https://github.com/user-attachments/assets/ab016ac7-d861-42ff-91df-b935cf54601a)
+
+![Screenshot 2024-08-14 155235](https://github.com/user-attachments/assets/9ef9e335-1164-4680-bb18-d3809abc4cef)
+
+![Screenshot 2024-08-14 155439](https://github.com/user-attachments/assets/b96e85bb-576e-48ce-9287-d32e126fcc50)
+
 ## Technologies Used
 - **Python**, **Plotly**, **D3.js**, **Pandas**, and **SQL Database**.
 
